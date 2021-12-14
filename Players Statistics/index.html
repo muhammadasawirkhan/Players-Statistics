@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Players Statistics</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="leftSide">
+                <h2 class="leftSideHeading">Select Category and Player</h2>
+                <div class="playersDiv">
+                    <select class="playersCategory" onchange="playerCategoryFunc();">
+                        <option value="0"><span class="defaultOption">Select Category...</span></option>
+                        <option value="1">Batsman</option>
+                        <option value="2">Bowler</option>
+                        <option value="3">All Rounder</option>
+                    </select>
+                </div>
+                <div class="playersList">
+
+                </div>
+            </div>
+            <div class="rightSide">
+                <h2 class="rightSideHeading">Player Statistics</h2>
+                <div class="playerStats">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

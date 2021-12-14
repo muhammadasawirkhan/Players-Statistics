@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Problem</title>
+</head>
+<body>
+    <form>
+        <input type="radio" name="choice" value="yes" id="choice-yes" checked> 
+        <label for="choice-yes">Yes</label>
+        <input type="radio" name="choice" value="no" id="choice-no">
+        <label for="choice-no">No</label>
+        <button id="btn">Show Selected Value</button>
+    </form>
+    <script>
+        const btn = document.querySelector('#btn');
+        // handle button click
+        
+            const rbs = document.querySelectorAll('input[name="choice"]');
+            let selectedValue;
+            for (const rb of rbs) {
+                console.log(rb);
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+            }
+            console.log(selectedValue)
+           
+    
+    </script>
+</body>
+</html>

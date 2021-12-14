@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(img/bg1.jpg);
+    background-size: cover;
+}
+
+.wrapper{
+    width: 800px;
+    height:500px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.4);
+    font-family: 'Lato', sans-serif;
+}
+
+.leftSide{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: 1px solid #aeaeae;
+    width: 55%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSide{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 45%;
+    height: 100%;
+    padding: 15px 30px;
+}
+
+.leftSideHeading, .rightSideHeading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.playersDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.playersCategory{
+    border: none;
+    border-bottom: 2px solid #c9c9c9;
+    cursor: pointer;
+    padding: 10px 100px;
+    font-size: 16px;
+}
+
+.playersCategory:focus{
+    outline: none;
+}
+
+.playersList{
+    padding: 30px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.playersList div{
+    padding: 10px 10px;
+    margin: 10px 0px;
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.playersList div input[type=radio]{
+    cursor: pointer;
+}
+
+img{
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+h3{
+    text-align: center;
+}
+
+.playerStats p{
+    padding: 10px 20px;
+    background-color: #dddddd;
+    margin: 5px 0;
+    border-radius: 100px;
+}
+
+@media(max-width: 850px)
+{
+    .container{
+        width: 100%;
+        height: 200vh;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 900px;
+    }
+
+    .leftSide{
+        height: 50%;
+        width: 400px;
+    }
+
+    .rightSide{
+        height: 50%;
+        width: 400px;
+    }
+}
